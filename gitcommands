@@ -2,3 +2,6 @@
 
 git config --global user.email "mahimmm07@gmail.com"
 git config --global user.name "Mahendra Barauniya"
+
+*). 
+git clone <git url>
