@@ -1,0 +1,4 @@
+*). create a fork repository and then clone if from your forked repository...
+
+git config --global user.email "mahimmm07@gmail.com"
+git config --global user.name "Mahendra Barauniya"
