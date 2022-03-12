@@ -6,6 +6,8 @@ git config --global user.name "Mahendra Barauniya"
 *). 
 git clone <git url>
 git clone --branch="branch name" <url>   -- give branch without "
+
+--renaming a branch
 git branch -m <release_202201>  -- it will rename the current local branch to release_202201
 when we commit our changes and push it.. it will push to our local repository..
 Raise a PR and from our local repo to public repo.. get it approved and then merge the code.
@@ -20,7 +22,40 @@ git status   -- command to show the working tree status
         (use "git add <file>..." to update what will be committed)
         (use "git restore <file>..." to discard changes in working directory)
                 modified:   gitcommands
---git help status
+--git help -a       -- will display all commands 
+--git help status   -- will open manual page on browser ...
+--git status  -h    -- will open help on terminal 
 
 
 *). 
+git pull origin develop_202201:develop_202201
+
+
+*). git branch
+
+*). git branch -a 
+
+    $ git branch
+    * master
+
+    mahib@LAPTOP-NN3T9LKD MINGW64 /d/study/github/python (master)
+    $ git branch -a
+    * master
+    remotes/origin/HEAD -> origin/master
+    remotes/origin/develop_201909
+    remotes/origin/master
+
+
+
+
+*). git log 
+*). git log --oneline       -- it will give the commit id along with message and will tell us where the HEAD is...
+
+
+
+Important points/topic in git:
+*). what is HEAD in git?
+When working with Git, only one branch can be checked out at a time - and this is what's called the "HEAD" branch.
+HEAD is a symbolic reference pointing to wherever you are in your commit history.
+It follows you wherever you go, whatever you do, like a shadow.
+If you make a commit, HEAD will move. If you checkout something, HEAD will move. Whatever you do, if you have moved somewhere new in your commit history, HEAD has moved along with you.
