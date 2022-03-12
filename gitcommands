@@ -5,3 +5,22 @@ git config --global user.name "Mahendra Barauniya"
 
 *). 
 git clone <git url>
+git clone --branch="branch name" <url>   -- give branch without "
+git branch -m <release_202201>  -- it will rename the current local branch to release_202201
+when we commit our changes and push it.. it will push to our local repository..
+Raise a PR and from our local repo to public repo.. get it approved and then merge the code.
+
+*). 
+git status   -- command to show the working tree status
+        o/p:-> 
+        On branch main
+        Your branch is up to date with 'origin/main'.
+
+        Changes not staged for commit:
+        (use "git add <file>..." to update what will be committed)
+        (use "git restore <file>..." to discard changes in working directory)
+                modified:   gitcommands
+--git help status
+
+
+*). 
