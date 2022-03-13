@@ -79,7 +79,7 @@ once we commit it will start reflecting in git ext also and then if you want to 
 
 - to change last commit message:
     git commit --amend -m "New commit message" -- it will only change the last commit message...
-- to change last n commit message or even chagne the last pushed message also :  rebase using interactive rebase
+- to change last n commit or pushed  message:  rebase using interactive rebase
         https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/changing-a-commit-message
 
 git rebase  -i HEAD~n 
