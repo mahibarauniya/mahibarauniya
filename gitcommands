@@ -73,6 +73,49 @@ git add
 git add . 
 git commit -m ''
 once we commit it will start reflecting in git ext also and then if you want to reset it from remote repo then use reset command
+        -- changes from origin will be having origin/master and master will have your commit changes in git extension... only if you're in master branch..
+
+-- if jira validation failed or some other issue in commit message while pushing then if you have to change the commit messge.
+
+- to change last commit message:
+    git commit --amend -m "New commit message" -- it will only change the last commit message...
+- to change last n commit message or even chagne the last pushed message also :  rebase using interactive rebase
+        https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/changing-a-commit-message
+
+git rebase  -i HEAD~n 
+--if we want to cahgne the commit message of last 2 message then...it will open a file ...change the work from pick to reword and chagne the commit message and then close it.
+git rebase -i HEAD~2 
+
+    The list will look similar to the following:
+
+    pick e499d89 GBTJIRA-50- change for one extract 
+    pick 0c39034 GBTJIRA-51- new file for load process   
+    # p, pick = use commit
+    # r, reword = use commit, but edit the commit message
+    # e, edit = use commit, but stop for amending
+    # s, squash = use commit, but meld into previous commit
+    # f, fixup = like "squash", but discard this commit's log message
+    # x, exec = run command (the rest of the line) using shell
+
+        These lines can be re-ordered; they are executed from top to bottom.
+        #
+        # If you remove a line here THAT COMMIT WILL BE LOST.
+        #
+        # However, if you remove everything, the rebase will be aborted.
+        #
+        # Note that empty commits are commented out
+
+    pick e499d89 GBTJIRA-50- change for one extract 
+    reword 0c39034 GBTJIRA-51- new file for load process
+
+git push 
+
+--------------------------------------
+*). git rebase : 
+
+
+--------------------------------------
+*). git reset : 
 
 
 --------------------------------------
